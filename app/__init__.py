@@ -1,8 +1,8 @@
 from flask import Flask 
 
-from .extensions import db, migrate
-from .routes.main import main
-from .routes.api import api
+from app.extensions import db, migrate
+from app.routes.main import main
+from app.routes.api import api
 
 def create_app():
     app = Flask(__name__)
